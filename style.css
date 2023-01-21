@@ -41,6 +41,15 @@ h2 {
   font-size: 20px;
   color: red;
 }
+.heading h1 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.heading h1 span {
+  color: red;
+  font-size: 30px;
+}
 /* Header Area CSS */
 .header-area {
   padding: 30px 0;
@@ -148,8 +157,24 @@ h2 {
 .hero-image img {
   width: 100%;
 }
-
-/* Breakpoint CSS */
+/* About-Area CSS */
+.skill-area {
+  padding: 100px 0;
+}
+.skill-area p {
+  font-size: 20px;
+}
+.progress-area {
+  margin-bottom: 50px;
+}
+.single-progress-area {
+  margin-top: 40px;
+}
+.single-progress-area .progress,
+.progress-stacked {
+  --bs-progress-height: 0.6rem;
+  --bs-progress-font-size: 0.75rem;
+}
 /* Header-Area */
 @media (max-width: 991px) {
   /* Header-area */
@@ -191,6 +216,22 @@ h2 {
   .hero-image img {
     margin-top: 20px;
   }
+  /* Skill Area */
+  .skill-area {
+    padding: 80px 0;
+  }
+  .skill-area h1 {
+    font-size: 20px;
+  }
+  .skill-area h1 span {
+    font-size: 30px;
+  }
+  .skill-area p {
+    font-size: 20px;
+  }
+  .progress-area {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -218,5 +259,21 @@ h2 {
   }
   .hero-image img {
     margin-top: 20px;
+  }
+  /* Skill Area */
+  .skill-area {
+    padding: 20px 20px;
+  }
+  .skill-area h1 {
+    font-size: 20px;
+  }
+  .skill-area h1 span {
+    font-size: 30px;
+  }
+  .skill-area p {
+    font-size: 20px;
+  }
+  .progress-area {
+    margin-bottom: 20px;
   }
 }
