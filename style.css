@@ -36,7 +36,13 @@ h2 {
   position: absolute;
   content: "";
   border-radius: 0 0 50% 50%;
-  background-color: red;
+  background: rgb(36, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(36, 0, 0, 1) 6%,
+    rgba(195, 75, 81, 1) 100%,
+    rgba(255, 0, 0, 1) 100%
+  );
   width: 310px;
   height: 310px;
   top: -180px;
@@ -56,7 +62,7 @@ h2 {
   overflow: hidden;
   background-size: 100%;
   background-repeat: no-repeat;
-  border: 5px solid black;
+  border: 2px solid black;
   border-radius: 50%;
   z-index: 3;
 }
@@ -68,7 +74,7 @@ h2 {
   content: "Snehashish";
   font-weight: 700;
   font-size: 35px;
-  color: red;
+  color: #fff;
   top: 135px;
   left: 25px;
   z-index: 1;
@@ -80,6 +86,7 @@ h2 {
   list-style: none;
 }
 .header-area .nav-item a {
+  text-transform: capitalize;
   margin-left: 30px;
   color: #fff;
   padding: 20px;
@@ -106,6 +113,9 @@ h2 {
 /* Breakpoint CSS */
 @media (max-width: 991px) {
   /* Header-area */
+  .header-area .nav-item a {
+    padding: 10px;
+  }
   .header-area .nav-item a:hover {
     letter-spacing: 0.025cm;
   }
@@ -113,7 +123,7 @@ h2 {
     font-size: 20px;
   }
   .header-area .nav-item:last-child {
-    width: 80%;
+    width: 50%;
   }
   .header-area .navbar-toggler {
     margin-top: 40px;
@@ -130,8 +140,7 @@ h2 {
   .navbar-toggler {
     margin-top: 80px;
   }
-  .navbar-nav .nav-item {
-    text-align: center;
-    margin-top: 150px;
+  .header-area .navbar-nav {
+    margin-top: 110px;
   }
 }
