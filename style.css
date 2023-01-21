@@ -1,0 +1,137 @@
+/*Google Font*/
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600;700;800&display=swap");
+
+/* font-family: 'Catamaran', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Basic CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Catamaran", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.7;
+  background-color: black;
+  color: #fff;
+}
+h1,
+h2 {
+  font-family: "Catamaran", sans-serif;
+  font-weight: 600;
+}
+.header-area {
+  padding: 30px 0;
+  position: relative;
+  z-index: 4;
+  align-items: center;
+}
+.header-area::after {
+  position: absolute;
+  content: "";
+  border-radius: 0 0 50% 50%;
+  background-color: red;
+  width: 310px;
+  height: 310px;
+  top: -180px;
+  left: -50px;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.header-area::before {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 150px;
+  top: 31px;
+  left: 35px;
+  background-image: url(assets/img/logo.img);
+  overflow: hidden;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: 5px solid black;
+  border-radius: 50%;
+  z-index: 3;
+}
+.header-area .header-logo {
+  position: absolute;
+}
+.header-area .header-logo::after {
+  position: relative;
+  content: "Snehashish";
+  font-weight: 700;
+  font-size: 35px;
+  color: red;
+  top: 135px;
+  left: 25px;
+  z-index: 1;
+}
+.header-area .navbar {
+  background-color: transparent;
+}
+.header-area .nav-item li {
+  list-style: none;
+}
+.header-area .nav-item a {
+  margin-left: 30px;
+  color: #fff;
+  padding: 20px;
+  transition: 0.5s;
+  font-weight: 700;
+}
+.header-area .nav-item a:hover {
+  letter-spacing: 0.025cm;
+  color: red;
+  cursor: pointer;
+}
+.header-area .nav-item:last-child .nav-link {
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  border: 1px solid red;
+  padding: 10px 20px;
+  cursor: pointer;
+  justify-content: center;
+}
+.header-area .nav-item:last-child .nav-link:hover {
+  font-size: 20px;
+  color: red;
+}
+/* Breakpoint CSS */
+@media (max-width: 991px) {
+  /* Header-area */
+  .header-area .nav-item a:hover {
+    letter-spacing: 0.025cm;
+  }
+  .header-area .nav-item:last-child a:hover {
+    font-size: 20px;
+  }
+  .header-area .nav-item:last-child {
+    width: 80%;
+  }
+  .header-area .navbar-toggler {
+    margin-top: 40px;
+    margin-right: 20px;
+  }
+  .header-area .navbar-nav {
+    text-align: center;
+    margin-top: 85px;
+  }
+}
+
+@media (max-width: 375px) {
+  /* Header-area */
+  .navbar-toggler {
+    margin-top: 80px;
+  }
+  .navbar-nav .nav-item {
+    text-align: center;
+    margin-top: 150px;
+  }
+}
