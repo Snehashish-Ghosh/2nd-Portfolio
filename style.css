@@ -555,7 +555,7 @@ h2 {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 575px) {
   /* Header-area */
   .header-area .navbar-toggler {
     margin-top: 80px;
@@ -687,3 +687,4 @@ h2 {
     font-size: 10px;
   }
 }
+/* Completed */
