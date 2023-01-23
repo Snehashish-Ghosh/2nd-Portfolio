@@ -25,6 +25,13 @@ submitButton.addEventListener("click", function () {
       templateParams,
       "uptWrWYIZaMbXfJXw"
     );
+    nameField.value = "";
+    emailField.value = "";
+    messageField.value = "";
+    errorText.innerHTML = "";
+  } else {
+    errorText.innerHTML =
+      '<p class="text-warning" >Please make sure all fields are filled in correctly</p>';
   }
 });
 
