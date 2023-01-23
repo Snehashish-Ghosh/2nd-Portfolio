@@ -638,6 +638,11 @@ h2 {
   .single-testimonial {
     margin: 40px 10px;
   }
+
+.testimonial-area .client-image img {
+  display: none;
+}
+
   .testimonial-area h4 {
     font-size: 20px;
   }
