@@ -25,6 +25,17 @@ h1,
 h2 {
   font-family: "Catamaran", sans-serif;
   font-weight: 600;
+  font-size: 25px;
+}
+.background {
+  background-image: linear-gradient(
+    to bottom,
+    #0a0101,
+    #070101,
+    #200307,
+    #140105,
+    #000000
+  );
 }
 .theme-button {
   display: inline-block;
@@ -47,7 +58,7 @@ h2 {
   text-transform: capitalize;
 }
 .heading h1 span {
-  color: red;
+  color: #ff0707ca;
   font-size: 30px;
 }
 /* Header Area CSS */
@@ -64,7 +75,7 @@ h2 {
   background: rgb(36, 0, 0);
   background: linear-gradient(
     180deg,
-    rgba(36, 0, 0, 1) 6%,
+    rgb(88, 3, 3) 6%,
     rgba(195, 75, 81, 1) 100%,
     rgba(255, 0, 0, 1) 100%
   );
@@ -133,7 +144,7 @@ h2 {
 }
 .header-area .nav-item:last-child .nav-link:hover {
   font-size: 20px;
-  color: red;
+  color: #ff0000;
 }
 
 /* Hero Area CSS */
@@ -145,11 +156,11 @@ h2 {
   text-transform: capitalize;
 }
 .hero-area h1 span {
-  color: red;
   font-size: 50px;
+  color: #ff0707ca;
 }
 .hero-area h2 span {
-  color: red;
+  color: #ff0000;
 }
 .hero-area p {
   font-size: 20px;
@@ -157,15 +168,24 @@ h2 {
 .hero-image img {
   width: 100%;
 }
-/* About-Area CSS */
-.skill-area {
+/* About Area CSS */
+.about-area {
   padding: 100px 0;
 }
-.skill-area p {
+.about-area p {
   font-size: 20px;
 }
 .progress-area {
-  margin-bottom: 50px;
+  margin: 50px;
+}
+.progress-text h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.progress-text h2 span {
+  font-size: 50px;
+  color: #ff0000;
 }
 .single-progress-area {
   margin-top: 40px;
@@ -175,6 +195,76 @@ h2 {
   --bs-progress-height: 0.6rem;
   --bs-progress-font-size: 0.75rem;
 }
+/* Service Area CSS */
+.service-area {
+  padding: 100px 0;
+}
+.service-area .heading {
+  margin-bottom: 80px;
+}
+.single-service {
+  padding: 30px 0;
+  color: rgb(223, 213, 213);
+  box-shadow: 0 0 20px red;
+  margin: 40px 30px;
+  transition: 0.5s;
+}
+.single-service:hover {
+  margin-top: -10px;
+  color: rgb(231, 195, 195);
+}
+.single-service i {
+  font-size: 40px;
+  padding: 20px 0;
+}
+.single-service p {
+  padding: 10px;
+}
+/* Porfolio Area CSS */
+.porfolio-area {
+  padding: 100px 0;
+}
+.porfolio-area .heading {
+  margin-bottom: 80px;
+}
+.porfolio-area .heading p {
+  margin-top: 10px;
+}
+.single-portfolio img {
+  width: 100%;
+  border: 1px solid #ff0000;
+  transition: 0.5s;
+}
+.single-portfolio img:hover {
+  box-shadow: 0 0 20px red;
+  border-radius: 15px 15px 15px 15px;
+  width: 102%;
+}
+.single-portfolio img {
+  margin-bottom: 40px;
+}
+/* Testimonial Area */
+.testimonial-area {
+  padding: 100px 0;
+}
+.single-testimonial {
+  margin: 80px 20px;
+  padding: 10px;
+  box-shadow: 0 0 20px red;
+}
+.testimonial-content {
+  display: flex;
+  padding: 10px;
+}
+.testimonial-area .client-image img {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 100%;
+}
+.testimonial-area h4 {
+  margin-top: 10px;
+}
+
 /* Header-Area */
 @media (max-width: 991px) {
   /* Header-area */
@@ -216,21 +306,71 @@ h2 {
   .hero-image img {
     margin-top: 20px;
   }
-  /* Skill Area */
-  .skill-area {
+  /* About Area */
+  .about-area {
     padding: 80px 0;
   }
-  .skill-area h1 {
+  .about-area h1 {
     font-size: 20px;
   }
-  .skill-area h1 span {
+  .about-area h1 span {
     font-size: 30px;
   }
-  .skill-area p {
+  .about-area p {
     font-size: 20px;
   }
   .progress-area {
     margin-bottom: 30px;
+  }
+  .progress-text h1 {
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .progress-text h2 {
+    font-size: 20px;
+  }
+  .progress-text h2 span {
+    font-size: 30px;
+  }
+  /* Service Area */
+  .service-area {
+    padding: 80px 0;
+  }
+  .service-area .heading {
+    margin-bottom: 50px;
+  }
+  .single-service:hover {
+    margin-top: -5px;
+  }
+  .service-area .heading h1 {
+    font-size: 20px;
+  }
+  .single-service i {
+    font-size: 30px;
+  }
+  .single-service p {
+    padding: 20px;
+  }
+  /* Portfolio Area */
+  .porfolio-area {
+    padding: 80px 0;
+  }
+  .porfolio-area .heading {
+    margin-bottom: 50px;
+  }
+  /* Testimonial Area */
+  .testimonial-area {
+    padding: 80px 0;
+  }
+  .single-testimonial {
+    margin: 50px 20px;
+  }
+  .testimonial-area h4 {
+    font-size: 20px;
+  }
+  .testimonial-area p {
+    font-size: 15px;
   }
 }
 
@@ -258,22 +398,77 @@ h2 {
     font-size: 15px;
   }
   .hero-image img {
-    margin-top: 20px;
+    margin-top: 30px;
   }
-  /* Skill Area */
-  .skill-area {
-    padding: 20px 20px;
+  /* About Area */
+  .about-area {
+    padding: 60px 20px;
   }
-  .skill-area h1 {
-    font-size: 20px;
+  .about-area h1 {
+    font-size: 15px;
   }
-  .skill-area h1 span {
+  .about-area h1 span {
     font-size: 30px;
   }
-  .skill-area p {
+  .about-area p {
     font-size: 20px;
   }
   .progress-area {
     margin-bottom: 20px;
+  }
+  .progress-text h1 {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  .progress-text h2 {
+    font-size: 15px;
+  }
+  .progress-text h2 span {
+    font-size: 25px;
+  }
+  /* Service Area */
+  .service-area {
+    padding: 60px 0;
+  }
+  .service-area .heading {
+    margin-bottom: 30px;
+  }
+  .single-service i {
+    font-size: 25px;
+  }
+  .single-service p {
+    padding: 10px;
+  }
+  /* Portfolio Area */
+  .porfolio-area {
+    padding: 60px 0;
+  }
+  .porfolio-area .heading {
+    margin-bottom: 30px;
+  }
+  .service-area .heading h1 {
+    font-size: 25px;
+  }
+  .single-service i {
+    font-size: 30px;
+  }
+  .single-service p {
+    padding: 10px;
+  }
+  /* Testimonial Area */
+  .testimonial-area {
+    padding: 60px 0;
+  }
+  .single-testimonial {
+    margin: 40px 10px;
+  }
+  /* .testimonial-area .client-image img {
+    display: none;
+  } */
+  .testimonial-area h4 {
+    font-size: 20px;
+  }
+  .testimonial-area p {
+    font-size: 15px;
   }
 }
